@@ -121,8 +121,6 @@ The SuperGlue code and weights are released by Magic Leap under a non-commercial
 
 Petra Buršić, Dora Folo, Marko Habijanec, Luka Miličević, Matko Pribičević, Hana Šlipogor
 
-**My role:** _TODO: describe your part (e.g. which pipeline you implemented, the evaluation, the dataset/masks)_
-
 ## References
 
 - D. G. Lowe, *Distinctive Image Features from Scale-Invariant Keypoints*, IJCV 2004
