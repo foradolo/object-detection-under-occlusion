@@ -80,42 +80,7 @@ Classical features are fast and interpretable but fragile under occlusion and lo
 
 ---
 
-## Repository contents
-
-```
-├── README.md
-├── requirements.txt
-├── src/
-│   └── superpoint_superglue_matching.py   # SuperPoint + SuperGlue matching for all object–scene pairs
-└── docs/
-    ├── slides.pdf                          # project presentation
-    └── figures/                            # result figures used in this README
-```
-
 This repository is an archive of the project. The original dataset and the scripts for the SIFT/ORB, SAM + DINOv2 and evaluation stages were not preserved, so the figures above come from the final presentation.
-
-## Running the SuperPoint + SuperGlue script
-
-```bash
-git clone https://github.com/foradolo/object-detection-under-occlusion.git
-cd object-detection-under-occlusion
-pip install -r requirements.txt
-
-# SuperGlue code and pretrained weights (not included here; see license note below)
-git clone https://github.com/magicleap/SuperGluePretrainedNetwork.git src/SuperGluePretrainedNetwork
-
-# Add your own images: object crops in data/objects/, scenes in data/scenes/ (both .png)
-python src/superpoint_superglue_matching.py
-```
-
-For each object–scene pair, the script writes to `outputs/`:
-- `<object>_<scene>.png`: side-by-side visualization of the matches
-- `<object>_<scene>.txt`: runtime, keypoint counts and number of matches
-- `<object>_<scene>.csv`: coordinates of matched scene keypoints, used for evaluation against the masks
-
-The SuperGlue code and weights are released by Magic Leap under a non-commercial research license, which is why they are cloned separately rather than included here.
-
----
 
 ## Team
 
